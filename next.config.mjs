@@ -9,7 +9,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  output: 'export', // ← اضيف السطر ده
+  output: 'export', // مهم جدًا للـ static export
 }
 
 export default nextConfig
