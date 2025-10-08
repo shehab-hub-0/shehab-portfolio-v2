@@ -18,12 +18,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
       - name: Install dependencies
+        # حل مشاكل peer dependencies الخاصة بـ React 19
         run: npm install --legacy-peer-deps
 
       - name: Build project
